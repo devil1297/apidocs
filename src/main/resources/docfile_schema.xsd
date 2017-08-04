@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="http://benchresources.in/cdm/Player" xmlns:tns="http://benchresources.in/cdm/Player"
-	elementFormDefault="qualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
 
 	<!-- TODO: Add model for list -->
 	<xsd:element name="DocFileResults">
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="total" type="xsd:int" />
-				<xsd:element ref="tns:DocFileModel" minOccurs="0"
+				<xsd:element ref="DocFileModel" minOccurs="0"
 					maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
@@ -41,7 +39,7 @@
 				<xsd:element name="isNew" type="xsd:boolean" />
 				<xsd:element name="overdue" type="xsd:int" />
 				<xsd:element name="permission" type="xsd:string" />
-				<xsd:element ref="tns:LabelModel" minOccurs="0"
+				<xsd:element ref="LabelModel" minOccurs="0"
 					maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
@@ -87,13 +85,13 @@
 				<xsd:element name="approvalDate " type="xsd:date" />
 				<xsd:element name="signerUserId" type="xsd:long" />
 				<xsd:element name="verified" type="xsd:boolean" />
-				<xsd:element ref="tns:LabelModel" minOccurs="0"
+				<xsd:element ref="LabelModel" minOccurs="0"
 					maxOccurs="unbounded" />
-				<xsd:element ref="tns:LinkModel" minOccurs="0"
+				<xsd:element ref="LinkModel" minOccurs="0"
 					maxOccurs="unbounded" />
-				<xsd:element ref="tns:ActivityModel" minOccurs="0"
+				<xsd:element ref="ActivityModel" minOccurs="0"
 					maxOccurs="unbounded" />
-				<xsd:element ref="tns:AttachModel" minOccurs="0"
+				<xsd:element ref="AttachModel" minOccurs="0"
 					maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
@@ -124,7 +122,7 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="total" type="xsd:int" />
-				<xsd:element ref="tns:LabelModel" minOccurs="0"
+				<xsd:element ref="LabelModel" minOccurs="0"
 					maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
@@ -154,7 +152,7 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="total" type="xsd:int" />
-				<xsd:element ref="tns:LinkModel" minOccurs="0"
+				<xsd:element ref="LinkModel" minOccurs="0"
 					maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
@@ -193,7 +191,7 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="total" type="xsd:int" />
-				<xsd:element ref="tns:AttachModel" minOccurs="0"
+				<xsd:element ref="AttachModel" minOccurs="0"
 					maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
@@ -217,7 +215,7 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="total" type="xsd:int" />
-				<xsd:element ref="tns:RolesModel" minOccurs="0"
+				<xsd:element ref="RolesModel" minOccurs="0"
 					maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
@@ -258,7 +256,7 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="total" type="xsd:int" />
-				<xsd:element ref="tns:UserDocFileModel" minOccurs="0"
+				<xsd:element ref="UserDocFileModel" minOccurs="0"
 					maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
@@ -319,7 +317,7 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="total" type="xsd:int" />
-				<xsd:element ref="tns:ChangeLogModel" minOccurs="0"
+				<xsd:element ref="ChangeLogModel" minOccurs="0"
 					maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
