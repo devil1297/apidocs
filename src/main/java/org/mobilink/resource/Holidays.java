@@ -18,9 +18,9 @@ import javax.ws.rs.core.Response;
 
 import org.apache.cxf.headers.Header;
 import org.mobilink.exception.model.ExceptionModel;
-import org.mobilink.holidays.model.HolidaysInputModel;
-import org.mobilink.holidays.model.HolidaysModel;
-import org.mobilink.holidays.model.HolidaysResults;
+import org.mobilink.holiday.model.HolidaysInputModel;
+import org.mobilink.holiday.model.HolidaysModel;
+import org.mobilink.holiday.model.HolidaysResults;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
